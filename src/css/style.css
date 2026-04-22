@@ -1,0 +1,142 @@
+/* Body Reset -----*/
+body {
+margin: 0;
+font-family: "Work Sans", Arial, Helvetica, sans-serif;
+background-color: #E7F0FA;
+color: #0D2440;
+}
+
+/*---------Navbar-----------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:18px 40px;
+    background: #2E5E99;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar img{
+    height: 80px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(13, 36, 64, 0.25));
+    display: block;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.navbar img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 6px #7BA4D0);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #E7F0FA;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #7BA4D0; /* Soft blue hover */
+}
+
+/*---------End of Navbar-----------*/
+
+/*---------Main Section-----------*/
+/* ===== DOCUMENTATION BLOCK TABLE ===== */
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  padding: 40px;
+}
+.doc-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #7BA4D0;
+}
+
+/* Title bar */
+.doc-title {
+  background: #2E5E99;
+  color: #E7F0FA;
+  font-size: 22px;
+  padding: 16px;
+  text-align: left;
+}
+
+/* Description text */
+.doc-text {
+  background: #ffffff;
+  padding: 20px;
+  color: #0D2440;
+  font-size: 18px;
+  line-height: 1.6;
+  height: 260px;
+}
+
+/* Code block */
+.doc-code {
+  background: #0D2440;
+  color: #E7F0FA;
+  padding: 20px;
+  font-size: 16px;
+  height: 170px;
+}
+
+.doc-code pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: Consolas, monospace;
+  max-height: 300px;
+  overflow-y: auto;
+  /*color: hsl(0, 87%, 56%);*/
+}
+
+tr {
+    margin: 0;
+    color: #f32424;
+}
+
+.space {
+    padding-left: 2em; 
+}
+/*---------End of Main Section-----------*/
+
+/*---------INFO SECTIONS About + Contact-----------*/
+/* FULL-WIDTH SOFT SECTIONS */
+.info-section {
+  padding: 80px 40px;
+  background: #7BA4D0; /* Soft blue band */
+  color: #ffffff;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #E7F0FA;
+}
+
+.info-section p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/*---------END of INFO SECTIONS About + Contact-----------*/
+

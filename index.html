@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheatSheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#"><img src="./src/images/logo.png" alt=""></a>
+        <ul class="nav-links">
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">JavaScript</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+     <main id="html" class="bento-grid">
+
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title"><code>&lt;a&gt;</code>  Anchor Element</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                The  <code>&lt;a&gt;</code> is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, href. The href determines the location the anchor element points to. <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;a href="http://www.codecademy.com"&gt;
+    Visit this site
+&lt;/a&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title"><code>&lt;head&gt;</code> Head Element</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                The  <code>&lt;head&gt;</code> , element contains general information about an HTML page that isn’t displayed on the page itself. This information is called metadata and includes things like the title of the HTML document and links to stylesheets.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    Metadata is contained in this element
+    &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title"><code>&lt;target&gt;</code> Target Attribute</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                The target attribute on an <code>&lt;a&gt;</code> anchor element specifies where a hyperlink should be opened. A target value of "_blank" will tell the browser to open the hyperlink in a new tab in modern browsers, or in a new window in older browsers or if the browser has had settings changed to open hyperlinks in a new window.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;a href="https://www.google.com" target="_blank"&gt;
+        This anchor element links to google and will open in a new tab or window. &lt;/a&gt;
+</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title">Indentation</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                HTML code should be formatted such that the indentation level of text increases once for each level of nesting. It is a common convention to use two or four <strong>space</strong> per level of nesting.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;div&gt;
+    &lt;h1&gt; Heading &lt;/h1&gt;
+    &lt;ul&gt;
+         &lt;li&gt;Item 1 &lt;/li&gt;
+         &lt;li&gt;Item 2 &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title">Link to a Different Part of the Page</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                The anchor element <code>&lt;a&gt;</code>  can create hyperlinks to different parts of the same HTML document using the <strong>href</strong> attribute to point to the desired location with <strong>#</strong> followed by the <em>id</em> of the element to link to.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;div&gt;
+    &lt;p id="id-of-element-to-link-to"&gt;
+    A different part of the page! 
+    &lt;/p&gt;
+&lt;/div&gt;
+    
+&lt;a href="#id-of-element-to-link-to"&gt;Take me to a different part of the page.
+&lt;/a&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title"><code>&lt;html&gt;</code> HTML Element</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                The <code>&lt;html&gt;</code> element, the root of an HTML document, should be added after the <strong>!DOCTYPE</strong> declaration. All content/structure for an HTML document should be contained between the opening and closing <code>&lt;html&gt;</code> tags.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ ............
+&lt;/html&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title"><code>&lt;title&gt;</code> Title Element</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                The <code>&lt;title&gt;</code> element contains a text that defines the title of an HTML document. The title is displayed in the browser’s title bar or tab in which the HTML page is displayed. The <code>&lt;title&gt;</code> element can only be contained inside a document’s <code>&lt;head&gt;</code> element.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;
+        Title of the HTML page
+     &lt;/title&gt;
+  &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title"><code>&lt;li&gt;</code> List Item Element</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                The <code>&lt;li&gt;</code> list item element create list items inside: <br>
+                <ul>
+                    <li>Ordered lists &lt;ol&gt;</li>
+                    <li>Unordered lists     &lt;ul&gt;</li>
+                </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;Head east on Prince St &lt;/li&gt;
+    &lt;li&gt;Turn left on Elizabeth &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Cookies &lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title">Table Row Element</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                The table row element <code>&lt;tr&gt;</code> is used to add rows to a table
+                before adding table data and table headings.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        ...
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title"><code>&lt;ol&gt;</code> Ordered List Element</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                The <code>&lt;ol&gt;</code> ordered list element creates a list of items in sequential order. Each list item appears numbered by default.
+                <ol>
+                    <li>Cokies</li>
+                    <li>Milk</li>
+                </ol>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;Head east on Prince St &lt;/li&gt;
+    &lt;li&gt;Turn left on Elizabeth &lt;/li&gt;
+    &lt;li&gt;Cookies &lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title"><code>&lt;div&gt;</code> Div Element</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                The <code>&lt;div&gt;</code>  element is used as a container that divides an HTML document into sections and is short for “division”. <code>&lt;div&gt;</code> elements can contain flow content such as headings, paragraphs, links, images, etc.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;div&gt;
+  &lt;h1&gt;A section of grouped elements&lt;/h1&gt;
+  &lt;p&gt;Here’s some text for the section&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;h1&gt;Second section of grouped elements&lt;/h1&gt;
+  &lt;p&gt;Here’s some text for the section&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+    <section id="html" class="bento-card doc-block">
+        <table class="doc-table">
+            <tr>
+                <th class="doc-title">HTML Structure</th>
+            </tr>
+
+            <tr>
+                <td class="doc-text">
+                HTML is organized into a family tree structure. HTML elements can have parents, grandparents, siblings, children, grandchildren, etc.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="doc-code">
+<pre><code>&lt;body&gt;
+    &lt;div&gt;
+      &lt;h1&gt; It's div's child and body's 
+      grandchild &lt;/h1&gt;
+      &lt;h2&gt;It's h1's sibling &lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+</td>
+            </tr>
+        </table>
+    </section>
+
+  </main>
+
+   <!-- ABOUT ME SECTION -->
+<section id="about" class="info-section">
+  <div class="info-card">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Gustavo — a passionate web developer who loves creating clean,
+      modern, and beautiful layouts. I enjoy building websites, games, and
+      interactive experiences using HTML, CSS, and JavaScript.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="info-section">
+  <div class="info-card">
+    <h2>Contact Me</h2>
+    <p>Email: tecoding03@gmail.com</p>
+    <p>Location: Guatemala</p>
+  </div>
+</section>
+</body>
+</html>
